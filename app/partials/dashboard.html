@@ -1,0 +1,111 @@
+	<div class="container" ng-controller="UDashboardCtrl">
+	<div class="">
+	<!-- Left Section Start -->
+	<div class="pull-left col-xs-10 padding">
+	<!-- Conversions Section Start -->
+	<div class="conversions">
+	<div class="LftblackStick">Conversions</div>
+	<div class="LftradiusBox marginTopBtm">
+	<div class="LftradiusBoxInner clr">
+	<div class="pull-left col-xs-5 marginTop20">
+
+	<div class="checkbox brdBtm">
+	<label for="google">
+		<input type="checkbox" id="google" class="checkbox"> <span><img src="img/google.jpg" alt="Google" title="Google"/></span>
+	</label>
+	</div>
+	<div class="checkbox brdBtm">
+	<label for="zoom">
+		<input type="checkbox" id="zoom" class="checkbox"> <span><img src="img/zoom.jpg" alt="Zoom" title="Zoom"/></span>
+	</label>
+	</div>
+	<div class="checkbox brdBtm">
+	<label for="yahoo">
+		<input type="checkbox" id="yahoo" class="checkbox"> <span><img src="img/yahoo.jpg" alt="Yahoo" title="Yahoo"/></span>
+	</label>
+	</div>
+	<div class="checkbox brdBtm">
+	<label for="facebook">
+		<input type="checkbox" id="facebook" class="checkbox"> <span><img src="img/facebook.jpg" alt="Facebook" title="Facebook"/></span>
+	</label>
+	</div>
+	</div>
+	<div class="pull-right col-xs-11">
+	<div class="burnerImg">
+	<div class="footBalls">Footfalls <br/> 3500</div>
+	<div class="cart">Cart 353</div>
+	<div class="orders">Orders 100</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- Conversions Section End -->
+
+	<!-- Top Searches Section Start -->
+	<div class="topSearches" ng-controller="TopsearchesCtrl">
+	<div class="LftblackStick">Top Searches</div>
+	<div class="LftradiusBox marginTopBtm">
+	<div class="LftradiusBoxInner">
+	<div id="topsearches" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+	</div>
+	</div>
+	</div>
+	<!-- Top Searches Section End -->
+
+	<!-- Top Top 10 Products Section Start -->
+	<div class="topProducts" ng-controller="TopProductsCtrl">
+	<div class="LftblackStick">Top 06 Products</div>
+	<div class="LftradiusBox marginTopBtm">
+	<div class="LftradiusBoxInner">
+	<div id="toproducts" style="min-width: 310px; height: 250px; margin: 0 auto"></div>
+	</div>
+	</div>
+	</div>
+	<!-- Top Top 10 Products Section End -->
+	</div>
+	<!-- Left Section End -->
+
+	<!-- Right Section Start -->
+	<div class="pull-right col-xs-5 padding" style="width:34.25% !important;">
+	<!-- Orders Vs abandoned Section Start -->
+	<div class="ordersAbandoned" ng-controller="OrdersGraphCtrl">
+	<div class="RhtblackStick">Orders Vs abandoned</div>
+	<div class="RhtradiusBox marginTopBtm">
+	<div class="RhtradiusBoxInner">
+	<div id="orders" style="height:250px;"></div>
+	</div>
+	</div>
+	</div>
+	<!-- Orders Vs abandoned Section Start -->
+
+	<!-- Traffic Sources Section Start -->
+	<div class="trafficSources" ng-controller="TrafficSourcesCtrl">
+	<div class="RhtblackStick">Traffic Sources</div>
+	<div class="RhtradiusBox marginTopBtm">
+	<div class="RhtradiusBoxInner">
+	<div id="trafficsources" style="width: 300px; height: 200px; "></div>
+	</div>
+	</div>
+	</div>
+	<!-- Traffic Sources Section Start -->
+
+	<!-- Low Stock Section Start -->
+	<div class="lowStock" ng-controller="LowStockCtrl">
+	<div class="RhtblackStick" style="top:4% !important;">Low Stock</div>
+	<div class="selectDropBox">
+		<select ng-model="category"  id='magentocatgegories' ng-change="getlowstock(this.value)" >
+			<option value="">-- choose category --</option>
+		</select>
+	</div>
+	<div class="RhtradiusBox marginTopBtm">
+	<div class="RhtradiusBoxInner">
+	<div id="lowStock" style="height: 380px; margin: 0 auto"></div>
+	</div>
+	</div>
+	</div>
+	<!-- Low Stock Section Start -->
+	</div>
+	<!-- Right Section End -->
+	</div>
+	</div>
